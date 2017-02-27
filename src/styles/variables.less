@@ -10,7 +10,7 @@ body {
 	font-family: @baseFont;
 	font-size: @baseSize;
 	color: @baseColor;
-	background-color: #f7f7f7;
+	background-color: #fff;
 	text-align: left;
 	margin: 0;
 	position: relative;
@@ -49,15 +49,12 @@ ul {
 
 a {
   text-decoration: none;
-  color: inherit;
 
 	&:hover,
 	&:active,
 	&:focus,
 	&:visited {
 		text-decoration: none;
-	  color: inherit;
-		outline: none;
 	}
 }
 
@@ -84,11 +81,31 @@ p {
 ._active {color: #262626;}
 
 /* плавное изменение прозрачности  placeholder-а при фокусе */
-input[type=text]::-webkit-input-placeholder       {opacity: 1; transition: opacity 0.3s ease; color: #fff;}
-input[type=text]::-moz-placeholder                {opacity: 1; transition: opacity 0.3s ease; color: #fff;}
-input[type=text]:-moz-placeholder                 {opacity: 1; transition: opacity 0.3s ease; color: #fff;}
-input[type=text]:-ms-input-placeholder            {opacity: 1; transition: opacity 0.3s ease; color: #fff;}
-input[type=text]:focus::-webkit-input-placeholder {opacity: 0; transition: opacity 0.3s ease; color: #fff;}
-input[type=text]:focus::-moz-placeholder          {opacity: 0; transition: opacity 0.3s ease; color: #fff;}
-input[type=text]:focus:-moz-placeholder           {opacity: 0; transition: opacity 0.3s ease; color: #fff;}
-input[type=text]:focus:-ms-input-placeholder      {opacity: 0; transition: opacity 0.3s ease; color: #fff;}
+input[type=text]::-webkit-input-placeholder       {opacity: 0.7; transition: opacity 0.3s ease; color: #444;}
+input[type=text]::-moz-placeholder                {opacity: 0.7; transition: opacity 0.3s ease; color: #444;}
+input[type=text]:-moz-placeholder                 {opacity: 0.7; transition: opacity 0.3s ease; color: #444;}
+input[type=text]:-ms-input-placeholder            {opacity: 0.7; transition: opacity 0.3s ease; color: #444;}
+input[type=text]:focus::-webkit-input-placeholder {opacity: 0; transition: opacity 0.3s ease; color: #444;}
+input[type=text]:focus::-moz-placeholder          {opacity: 0; transition: opacity 0.3s ease; color: #444;}
+input[type=text]:focus:-moz-placeholder           {opacity: 0; transition: opacity 0.3s ease; color: #444;}
+input[type=text]:focus:-ms-input-placeholder      {opacity: 0; transition: opacity 0.3s ease; color: #444;}
+
+
+input[type=email]::-webkit-input-placeholder       {opacity: 0.7; transition: opacity 0.3s ease; color: #444;}
+input[type=email]::-moz-placeholder                {opacity: 0.7; transition: opacity 0.3s ease; color: #444;}
+input[type=email]:-moz-placeholder                 {opacity: 0.7; transition: opacity 0.3s ease; color: #444;}
+input[type=email]:-ms-input-placeholder            {opacity: 0.7; transition: opacity 0.3s ease; color: #444;}
+input[type=email]:focus::-webkit-input-placeholder {opacity: 0; transition: opacity 0.3s ease; color: #444;}
+input[type=email]:focus::-moz-placeholder          {opacity: 0; transition: opacity 0.3s ease; color: #444;}
+input[type=email]:focus:-moz-placeholder           {opacity: 0; transition: opacity 0.3s ease; color: #444;}
+input[type=email]:focus:-ms-input-placeholder      {opacity: 0; transition: opacity 0.3s ease; color: #444;}
+
+
+textarea::-webkit-input-placeholder       {opacity: 0.7; transition: opacity 0.3s ease; color: #444;}
+textarea::-moz-placeholder                {opacity: 0.7; transition: opacity 0.3s ease; color: #444;}
+textarea:-moz-placeholder                 {opacity: 0.7; transition: opacity 0.3s ease; color: #444;}
+textarea:-ms-input-placeholder            {opacity: 0.7; transition: opacity 0.3s ease; color: #444;}
+textarea:focus::-webkit-input-placeholder {opacity: 0; transition: opacity 0.3s ease; color: #444;}
+textarea:focus::-moz-placeholder          {opacity: 0; transition: opacity 0.3s ease; color: #444;}
+textarea:focus:-moz-placeholder           {opacity: 0; transition: opacity 0.3s ease; color: #444;}
+textarea:focus:-ms-input-placeholder      {opacity: 0; transition: opacity 0.3s ease; color: #444;}

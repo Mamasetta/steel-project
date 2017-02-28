@@ -37,46 +37,46 @@ openCallPopup.addEventListener("click", function(event) {
 
 
 
-// $(document).ready(function(){
-//     $("#call-form").submit(function() { //устанавливаем событие отправки для формы с id=form
-//             var form_data = $(this).serialize(); //собераем все данные из формы
-//             $.ajax({
-//             type: "POST", //Метод отправки
-//             url: "call.php", //путь до php фаила отправителя
-//             data: form_data,
-//             success: function() {
-//                    //код в этом блоке выполняется при успешной отправке сообщения
-//                    alert("Мы перезвоним вам в ближайшее время.");
-//             };
-//     });
-// });
-//
-//
-// $(document).ready(function(){
-//     $("#order-form").submit(function() { //устанавливаем событие отправки для формы с id=form
-//             var form_data = $(this).serialize(); //собераем все данные из формы
-//             $.ajax({
-//             type: "POST", //Метод отправки
-//             url: "order.php", //путь до php фаила отправителя
-//             data: form_data,
-//             success: function() {
-//                    //код в этом блоке выполняется при успешной отправке сообщения
-//                    alert("Ваш заказ отпрвлен. Менеджер свяжется с вами в ближайшее время.");
-//             });
-//     });
-// });
-//
-//
-// $(document).ready(function(){
-//     $("#feedback-form").submit(function() { //устанавливаем событие отправки для формы с id=form
-//             var form_data = $(this).serialize(); //собераем все данные из формы
-//             $.ajax({
-//             type: "POST", //Метод отправки
-//             url: "send.php", //путь до php фаила отправителя
-//             data: form_data,
-//             success: function() {
-//                    //код в этом блоке выполняется при успешной отправке сообщения
-//                    alert("Ваше сообщение отправлено.");
-//             });
-//     });
-// });
+$(document).ready(function(){
+    $("#call-form").submit(function() { //устанавливаем событие отправки для формы с id=form
+            var form_data = $(this).serialize(); //собераем все данные из формы
+            $.ajax({
+            type: "POST", //Метод отправки
+            url: "call.php", //путь до php фаила отправителя
+            data: form_data,
+            success: function() {
+                   //код в этом блоке выполняется при успешной отправке сообщения
+                   alert("Мы перезвоним вам в ближайшее время.");
+            }));
+    });
+});
+
+
+$(document).ready(function(){
+    $("#order-form").submit(function() { //устанавливаем событие отправки для формы с id=form
+            var form_data = $(this).serialize(); //собераем все данные из формы
+            $.ajax({
+            type: "POST", //Метод отправки
+            url: "order.php", //путь до php фаила отправителя
+            data: form_data,
+            success: function() {
+                   //код в этом блоке выполняется при успешной отправке сообщения
+                   alert("Ваш заказ отпрвлен. Менеджер свяжется с вами в ближайшее время.");
+            }));
+    });
+});
+
+
+$(document).ready(function(){
+    $("#feedback-form").submit(function() { //устанавливаем событие отправки для формы с id=form
+            var form_data = $(this).serialize(); //собераем все данные из формы
+            $.ajax({
+            type: "POST", //Метод отправки
+            url: "send.php", //путь до php фаила отправителя
+            data: form_data,
+            success: function() {
+                   //код в этом блоке выполняется при успешной отправке сообщения
+                   alert("Ваше сообщение отправлено.");
+            }));
+    });
+});

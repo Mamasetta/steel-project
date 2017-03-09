@@ -42,6 +42,6 @@ $tel = isset($_POST["email"]) ? strip_tags(trim($_POST["email"])) : null;
 $name = isset($_POST["name"]) ? strip_tags(trim($_POST["name"])) : null;
 
 $emailgo = new TEmail($typeEmail);
-$emailgo->body = '<p>От: '. $name .'</p><p>Контактный email - ' . $tel . '</p>';
+$emailgo->body = '<p>От: '. $name .'</p><p>Текст: - ' . $form . '</p><p>Контактный email - ' . $tel . '</p>';
 $json = $emailgo->send() ? "Спасибо, Ваш заказ отпрален. Менеджер свяжется с Вами в ближайшее время" : 0;
 echo $json;

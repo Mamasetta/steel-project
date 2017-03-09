@@ -808,7 +808,7 @@
 
           <div class="contacts__form">
 
-            <form id="feedback-form">
+            <form id="feedback-form" method="POST" action="/feedback.php">
 
               <div class="contacts__form_container contacts__form_container-1">
                 <input type="text" name="name" placeholder="Ваше имя" required="required">
@@ -844,7 +844,7 @@
 
     <div class="cross"></div>
 
-    <form id="order-form">
+    <form id="order-form" method="POST" action="/order.php">
 
       <div class="popup__form_container popup__form_container-1">
         <input type="text" name="name" placeholder="Ваше имя" required="required">
@@ -872,7 +872,7 @@
 
     <div class="title">Позвоните мне</div>
 
-    <form id="call-form">
+    <form id="call-form" method="POST" action="/call.php">
 
       <div class="popup__form_container popup__form_container-1">
         <input type="text" name="name" placeholder="Ваше имя" required="required">
@@ -882,7 +882,7 @@
         <input type="tel" name="tel" placeholder="Ваш телефон" required="required">
       </div>
 
-      <button class="btn">Отправить</button>
+      <button type="submit" class="btn">Отправить</button>
 
     </form>
 

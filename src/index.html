@@ -1,4 +1,91 @@
-//= template/header.html
+<!doctype html>
+<html lang="ru">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<title>Изготовление нержавеющих конструкций по Уралу || Сталь проект</title>
+	<meta name="description" content="Изготовление ограждающих конструкций из нержавеющей стали">
+	<meta name="keywords" content="Ограждения из нержавеющей стали, Лестничные ограждения, Ограждения балконов, Оборудование для инвалидов, Стеклянные ограждения лестниц, Ограждения из стали, Ограждения с деревом, Нестандартные конструкции, Выезд по Уралу, Доступное ограждение, работы по установке эконом конструкций, Ремонт ограждений, конструкций из нержавеющей, изготовления и установки конструкций из нержавеющей стали">
+	<meta name="author" content="Varvara Bazhukova">
+	<meta name="viewport" content="width=1200, initial-scale=1" user-scalable="1">
+	<meta name="yandex-verification" content="a4a9263a442694c1">
+	<meta name="google-site-verification" content="HJkWwanngrcSiNyHo_cJFWaYuaxQPXZCf50ZPpNjV-g">
+	<link rel="stylesheet" href="css/styles.css" type="text/css" />
+	<link rel="stylesheet" href="css/more.css" type="text/css" />
+</head>
+<body>
+<header class="page-header">
+
+	<div class="container">
+
+		<div class="page-header__contacts">
+
+			<ul>
+
+				<li>+7 (343) 361-62-50</li>
+
+				<li>
+					<img alt="logo" src="images/img/header-logo.png" width="153" height="122">
+				</li>
+
+				<li>+7 (922) 181-62-50</li>
+
+			</ul>
+
+		</div>
+
+		<div class="page-header__navigation">
+
+			<ul>
+
+				<li>
+					<a href="#services" class="nav-link" id="header-services-link">Услуги</a>
+				</li>
+
+				<li>
+					<a href="#benefits" class="nav-link" id="header-benefits-link">Приемущества</a>
+				</li>
+
+				<li>
+					<a href="#econom" class="nav-link" id="header-econom-link">Эконом</a>
+				</li>
+
+				<li>
+					<a href="#works" class="nav-link" id="header-works-link">Работы</a>
+				</li>
+
+				<li>
+					<a href="#costs" class="nav-link" id="header-costs-link">Стоимость</a>
+				</li>
+
+				<li>
+					<a href="#stages" class="nav-link" id="header-stages-link">Этапы</a>
+				</li>
+
+				<li>
+					<a href="#feedback" class="nav-link" id="header-feedback-link">Отзывы</a>
+				</li>
+
+				<li>
+					<a href="#repair" class="nav-link" id="header-repair-link">Ремонт</a>
+				</li>
+
+				<li>
+					<a href="#contacts" class="nav-link" id="header-contacts-link">Контакты</a>
+				</li>
+
+			</ul>
+
+		</div>
+
+		<h1 class="page-title">Ограждения любой сложности под ключ</h1>
+
+		<span class="page-subtitle">Быстро, качественно, доступно</span>
+
+		<a href="#" class="btn page-header__btn order__btn">Заказать</a>
+
+	</div>
+
+</header>
 <section class="grid">
 
   <section class="services" id="services">
@@ -721,7 +808,7 @@
 
           <div class="contacts__form">
 
-            <form id="feedback-form">
+            <form id="feedback-form" method="POST" action="/feedback.php">
 
               <div class="contacts__form_container contacts__form_container-1">
                 <input type="text" name="name" placeholder="Ваше имя" required="required">
@@ -757,7 +844,7 @@
 
     <div class="cross"></div>
 
-    <form id="order-form">
+    <form id="order-form" method="POST" action="/order.php">
 
       <div class="popup__form_container popup__form_container-1">
         <input type="text" name="name" placeholder="Ваше имя" required="required">
@@ -785,7 +872,7 @@
 
     <div class="title">Позвоните мне</div>
 
-    <form id="call-form">
+    <form id="call-form" method="POST" action="/call.php">
 
       <div class="popup__form_container popup__form_container-1">
         <input type="text" name="name" placeholder="Ваше имя" required="required">
@@ -795,11 +882,133 @@
         <input type="tel" name="tel" placeholder="Ваш телефон" required="required">
       </div>
 
-      <button class="btn">Отправить</button>
+      <button type="submit" class="btn">Отправить</button>
 
     </form>
 
   </div>
 
 </section>
-//= template/footer.html
+<!--[if lt IE 9]>
+	<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+
+
+
+<link rel="stylesheet" href="css/styles.css" type="text/css" />
+<link rel="stylesheet" href="css/more.css" type="text/css" />
+<footer class="page-footer">
+
+  <div class="container">
+
+    <div class="page-footer__navigation">
+
+      <ul>
+
+        <li>
+					<a href="#services" class="nav-link" id="footer-services-link">Услуги</a>
+				</li>
+
+				<li>
+					<a href="#benefits" class="nav-link" id="footer-benefits-link">Приемущества</a>
+				</li>
+
+				<li>
+					<a href="#econom" class="nav-link" id="footer-econom-link">Эконом</a>
+				</li>
+
+				<li>
+					<a href="#works" class="nav-link" id="footer-works-link">Работы</a>
+				</li>
+
+				<li>
+					<a href="#costs" class="nav-link" id="footer-costs-link">Стоимость</a>
+				</li>
+
+				<li>
+					<a href="#stages" class="nav-link" id="footer-stages-link">Этапы</a>
+				</li>
+
+				<li>
+					<a href="#feedback" class="nav-link" id="footer-feedback-link">Отзывы</a>
+				</li>
+
+				<li>
+					<a href="#repair" class="nav-link" id="footer-repair-link">Ремонт</a>
+				</li>
+
+				<li>
+					<a href="#contacts" class="nav-link" id="footer-contacts-link">Контакты</a>
+				</li>
+
+      </ul>
+
+    </div>
+
+    <div class="page-footer__contacts">
+
+			<ul>
+
+				<li>+7 (343) 361-62-50</li>
+
+				<li>
+					<img alt="logo" src="images/img/footer-logo.png" width="74" height="59">
+				</li>
+
+				<li>+7 (922) 181-62-50</li>
+
+			</ul>
+
+		</div>
+
+    <div class="page-footer__copyright">Все права защищены © 2017 ООО “Сталь проект”</div>
+
+  </div>
+
+</footer>
+<!--[if lt IE 9]>
+	<script src="http://html5shim.googlecode.com/svn/trunk/html5.js">
+</script><![endif]-->
+<!— Yandex.Metrika counter —>
+<script type="text/javascript">
+    (function (d, w, c) {
+        (w[c] = w[c] || []).push(function() {
+            try {
+                w.yaCounter43139529 = new Ya.Metrika({
+                    id:43139529,
+                    clickmap:true,
+                    trackLinks:true,
+                    accurateTrackBounce:true,
+                    webvisor:true
+                });
+            } catch(e) { }
+        });
+
+        var n = d.getElementsByTagName("script")[0],
+            s = d.createElement("script"),
+            f = function () { n.parentNode.insertBefore(s, n); };
+        s.type = "text/javascript";
+        s.async = true;
+        s.src = "https://mc.yandex.ru/metrika/watch.js";
+
+        if (w.opera == "[object Opera]") {
+            d.addEventListener("DOMContentLoaded", f, false);
+        } else { f(); }
+    })(document, window, "yandex_metrika_callbacks");
+</script>
+<noscript><div><img src="https://mc.yandex.ru/watch/43139529" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<!— /Yandex.Metrika counter —>
+<!— Google.Analytics counter —>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-92606173-1', 'auto');
+  ga('send', 'pageview');
+</script>
+<!— Google.Analytics counter —>
+<script src="js/main.js"></script>
+</body>
+</html>

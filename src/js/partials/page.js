@@ -10,49 +10,82 @@ $(document).ready(function(){
   return false;
   });
 
+  $(".works__item_1").on("click", function(event) {
+  $(".works__item_big-1").addClass("show");
+  return false;
+  });
+
+  $(".works__item_2").on("click", function(event) {
+  $(".works__item_big-2").addClass("show");
+  return false;
+  });
+
+  $(".works__item_3").on("click", function(event) {
+  $(".works__item_big-3").addClass("show");
+  return false;
+  });
+
+  $(".works__item_4").on("click", function(event) {
+  $(".works__item_big-4").addClass("show");
+  return false;
+  });
+
+  $(".works__item_5").on("click", function(event) {
+  $(".works__item_big-5").addClass("show");
+  return false;
+  });
+
+  $(".works__item_6").on("click", function(event) {
+  $(".works__item_big-6").addClass("show");
+  return false;
+  });
+
+  $(".works__item_7").on("click", function(event) {
+  $(".works__item_big-7").addClass("show");
+  return false;
+  });
+
+  $(".works__item_8").on("click", function(event) {
+  $(".works__item_big-8").addClass("show");
+  return false;
+  });
+
+  $(".works__item_9").on("click", function(event) {
+  $(".works__item_big-9").addClass("show");
+  return false;
+  });
+
+  $(".works__item_10").on("click", function(event) {
+  $(".works__item_big-10").addClass("show");
+  return false;
+  });
+
+  $(".works__item_11").on("click", function(event) {
+  $(".works__item_big-11").addClass("show");
+  return false;
+  });
+
+  $(".works__item_12").on("click", function(event) {
+  $(".works__item_big-12").addClass("show");
+  return false;
+  });
+
   $(".cross").on('click', function(event) {
     $(".popup__1").removeClass("show");
     $(".popup__2").removeClass("show");
+    $(".works__item_big-1").removeClass("show");
+    $(".works__item_big-2").removeClass("show");
+    $(".works__item_big-3").removeClass("show");
+    $(".works__item_big-4").removeClass("show");
+    $(".works__item_big-5").removeClass("show");
+    $(".works__item_big-6").removeClass("show");
+    $(".works__item_big-7").removeClass("show");
+    $(".works__item_big-8").removeClass("show");
+    $(".works__item_big-9").removeClass("show");
+    $(".works__item_big-10").removeClass("show");
+    $(".works__item_big-11").removeClass("show");
+    $(".works__item_big-12").removeClass("show");
     return false;
-  });
-
-  $("#call-form").submit(function() { //устанавливаем событие отправки для формы с id=form
-      var form_data = $(this).serialize(); //собераем все данные из формы
-      $.ajax({
-        type: "POST", //Метод отправки
-        url: "../call.php", //путь до php фаила отправителя
-        data: form_data,
-        success: function() {
-          //код в этом блоке выполняется при успешной отправке сообщения
-          alert("Мы перезвоним вам в ближайшее время.");
-        }
-      });
-  });
-
-  $("#order-form").submit(function() { //устанавливаем событие отправки для формы с id=form
-      var form_data = $(this).serialize(); //собераем все данные из формы
-      $.ajax({
-        type: "POST", //Метод отправки
-        url: "../order.php", //путь до php фаила отправителя
-        data: form_data,
-        success: function() {
-          //код в этом блоке выполняется при успешной отправке сообщения
-          alert("Ваш заказ отправлен. Менеджер свяжется с вами в ближайшее время.");
-        }
-      });
-  });
-
-  $("#feedback-form").submit(function() { //устанавливаем событие отправки для формы с id=form
-      var form_data = $(this).serialize(); //собераем все данные из формы
-      $.ajax({
-        type: "POST", //Метод отправки
-        url: "../send.php", //путь до php фаила отправителя
-        data: form_data,
-        success: function() {
-          //код в этом блоке выполняется при успешной отправке сообщения
-          alert("Ваше сообщение отправлено.");
-        }
-      });
   });
 
   $("#header-services-link").on("click", function() {

@@ -334,6 +334,7 @@ input[type="radio"] {
 }
 
 .works {
+  position: relative;
   background-color: #dbdeff;
   background-position: 50% 50%;
   background-repeat: no-repeat;
@@ -342,7 +343,6 @@ input[type="radio"] {
   text-align: center;
   padding-top: 85px;
   padding-bottom: 80px;
-  position: relative;
 
   .title {
     margin-bottom: 50px;
@@ -350,7 +350,7 @@ input[type="radio"] {
 
   &__item_big {
     display: none;
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     width: 100%;
@@ -358,11 +358,21 @@ input[type="radio"] {
     background-color: rgba(0, 0, 0, 0.9);
     animation-name: scale;
     animation-duration: 0.5s;
+    z-index: 1000;
+
+    .img-container {
+      position: relative;
+      width: 600px;
+      height: 600px;
+      margin-left: auto;
+      margin-right: auto;
+      top: 50%;
+      margin-top: -300px;
+    }
 
     img {
       position: absolute;
-      top: 50%;
-      transform: translateY(-50%);
+      top: 70px;
       left: 50%;
       transform: translateX(-50%);
       background-color: #fff;
@@ -370,8 +380,8 @@ input[type="radio"] {
 
     .cross {
       position: absolute;
-      top: 60px;
-      right: 60px;
+      top: 30px;
+      right: 0;
       .svg-close;
       .svg-close-dims;
       cursor: pointer;

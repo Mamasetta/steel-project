@@ -71,48 +71,26 @@ $(document).ready(function(){
   });
 
   $(".cross").on('click', function(event) {
-    $(".popup__1").removeClass("show");
-    $(".popup__2").removeClass("show");
-    $(".works__item_big-1").removeClass("show");
-    $(".works__item_big-2").removeClass("show");
-    $(".works__item_big-3").removeClass("show");
-    $(".works__item_big-4").removeClass("show");
-    $(".works__item_big-5").removeClass("show");
-    $(".works__item_big-6").removeClass("show");
-    $(".works__item_big-7").removeClass("show");
-    $(".works__item_big-8").removeClass("show");
-    $(".works__item_big-9").removeClass("show");
-    $(".works__item_big-10").removeClass("show");
-    $(".works__item_big-11").removeClass("show");
-    $(".works__item_big-12").removeClass("show");
+    $(".popup").removeClass("show");
+    $(".works__item_big").removeClass("show");
     return false;
   });
 
   $("body").on('click', function(event) {
-    $(".works__item_big-1").removeClass("show");
-    $(".works__item_big-2").removeClass("show");
-    $(".works__item_big-3").removeClass("show");
-    $(".works__item_big-4").removeClass("show");
-    $(".works__item_big-5").removeClass("show");
-    $(".works__item_big-6").removeClass("show");
-    $(".works__item_big-7").removeClass("show");
-    $(".works__item_big-8").removeClass("show");
-    $(".works__item_big-9").removeClass("show");
-    $(".works__item_big-10").removeClass("show");
-    $(".works__item_big-11").removeClass("show");
-    $(".works__item_big-12").removeClass("show");
+    $(".works__item_big").removeClass("show");
     return false;
   });
 
   $(".popup__container").on('click', function(event) {
-    $(".popup__1").removeClass("show");
-    $(".popup__2").removeClass("show");
+    $(".popup").removeClass("show");
     return false;
   });
 
   $('html').keydown(function(event){
     if (event.keyCode == 27) {
       $(".popup").removeClass("show");
+      $(".works__item_big").removeClass("show");
+      return false;
     }
   });
 
